@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoBox | Calculadora de materiales</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="marca">
+            <span class="icono">🌿</span>
+            <h1>EcoBox</h1>
+        </div>
+
+        <p>Calculadora de materiales ecológicos</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="presentacion">
+
+            <span class="etiqueta">EMPAQUES SOSTENIBLES</span>
+
+            <h2>Diseña tu caja de regalo ecológica</h2>
+
+            <p>
+                Calcula el área superficial de tu caja rectangular
+                y conoce cuánto material necesitas para fabricarla,
+                incluyendo un 10 % adicional de reserva.
+            </p>
+
+        </section>
+
+        <section class="calculadora">
+
+            <div class="formulario">
+
+                <h3>Dimensiones de la caja</h3>
+
+                <p class="descripcion">
+                    Introduce las medidas en centímetros.
+                </p>
+
+                <form id="formulario-calculo">
+
+                    <div class="campo">
+
+                        <label for="largo">Largo (cm)</label>
+
+                        <input
+                            type="number"
+                            id="largo"
+                            placeholder="Ejemplo: 20"
+                            min="0"
+                            step="any"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="ancho">Ancho (cm)</label>
+
+                        <input
+                            type="number"
+                            id="ancho"
+                            placeholder="Ejemplo: 10"
+                            min="0"
+                            step="any"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="alto">Alto (cm)</label>
+
+                        <input
+                            type="number"
+                            id="alto"
+                            placeholder="Ejemplo: 5"
+                            min="0"
+                            step="any"
+                            required
+                        >
+
+                    </div>
+
+                    <button type="submit">
+                        Calcular área superficial
+                    </button>
+
+                </form>
+
+                <p id="mensaje" class="mensaje" role="alert"></p>
+
+            </div>
+
+            <div class="resultados" id="resultados">
+
+                <h3>Resultados del cálculo</h3>
+
+                <p class="descripcion">
+                    Aquí aparecerán los resultados.
+                </p>
+
+                <div class="resultado-item">
+                    <span>Área superficial</span>
+                    <strong id="area-cm">-- cm²</strong>
+                    <small id="area-m">-- m²</small>
+                </div>
+
+                <div class="resultado-item">
+                    <span>Reserva adicional (10 %)</span>
+                    <strong id="reserva-cm">-- cm²</strong>
+                    <small id="reserva-m">-- m²</small>
+                </div>
+
+                <div class="resultado-item destacado">
+                    <span>Material total necesario</span>
+                    <strong id="total-cm">-- cm²</strong>
+                    <small id="total-m">-- m²</small>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="formula">
+
+            <h3>Fórmula matemática</h3>
+
+            <p>
+                A = 2 × (l × w + l × h + w × h)
+            </p>
+
+            <p>
+                Material total = Área superficial × 1.10
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            EcoBox © 2026 | Calculadora de materiales sostenibles
+        </p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

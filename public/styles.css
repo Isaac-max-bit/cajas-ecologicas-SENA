@@ -1,0 +1,271 @@
+
+/* =====================================
+   1. CONFIGURACION GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f1;
+    color: #26382c;
+    min-height: 100vh;
+}
+
+/* =====================================
+   2. ENCABEZADO
+===================================== */
+
+.encabezado {
+    background-color: #244b36;
+    color: white;
+    padding: 25px 8%;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.marca h1 {
+    font-size: 27px;
+}
+
+.icono {
+    font-size: 28px;
+}
+
+.encabezado p {
+    margin-top: 8px;
+    color: #d7e7d8;
+    font-size: 14px;
+}
+
+/* =====================================
+   3. CONTENEDOR PRINCIPAL
+===================================== */
+
+.contenedor {
+    width: 90%;
+    max-width: 1050px;
+    margin: 55px auto;
+}
+
+/* =====================================
+   4. PRESENTACION
+===================================== */
+
+.presentacion {
+    margin-bottom: 35px;
+}
+
+.etiqueta {
+    color: #54865d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.presentacion h2 {
+    font-size: 34px;
+    margin: 15px 0;
+    color: #244b36;
+}
+
+.presentacion p {
+    color: #68766b;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+/* =====================================
+   5. CALCULADORA
+===================================== */
+
+.calculadora {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.formulario,
+.resultados {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.formulario h3,
+.resultados h3 {
+    color: #244b36;
+    font-size: 20px;
+}
+
+.descripcion {
+    color: #849087;
+    font-size: 13px;
+    margin: 10px 0 25px;
+}
+
+/* =====================================
+   6. CAMPOS DEL FORMULARIO
+===================================== */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce5dc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.campo input:focus {
+    border-color: #54865d;
+    box-shadow: 0 0 0 3px rgba(84, 134, 93, 0.12);
+}
+
+/* =====================================
+   7. BOTON
+===================================== */
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3e754c;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #285b38;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* =====================================
+   8. RESULTADOS
+===================================== */
+
+.resultado-item {
+    background-color: #f5f8f3;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.resultado-item span {
+    color: #68766b;
+    font-size: 13px;
+}
+
+.resultado-item strong {
+    font-size: 23px;
+    color: #244b36;
+}
+
+.resultado-item small {
+    color: #7a897d;
+    font-size: 13px;
+}
+
+.destacado {
+    background-color: #e7f1e5;
+    border: 1px solid #c9dfc8;
+}
+
+.destacado strong {
+    color: #27623a;
+}
+
+/* =====================================
+   9. MENSAJES
+===================================== */
+
+.mensaje {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #bd3434;
+    line-height: 1.5;
+}
+
+/* =====================================
+   10. FORMULA
+===================================== */
+
+.formula {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #e8efe5;
+    border-radius: 12px;
+}
+
+.formula h3 {
+    color: #244b36;
+    margin-bottom: 15px;
+}
+
+.formula p {
+    margin: 10px 0;
+    color: #506453;
+}
+
+/* =====================================
+   11. FOOTER
+===================================== */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #849087;
+    font-size: 13px;
+}
+
+/* =====================================
+   12. DISEÑO RESPONSIVE
+===================================== */
+
+@media (max-width: 750px) {
+
+    .calculadora {
+        grid-template-columns: 1fr;
+    }
+
+    .presentacion h2 {
+        font-size: 27px;
+    }
+
+    .contenedor {
+        margin: 35px auto;
+    }
+
+}

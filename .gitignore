@@ -1,0 +1,13 @@
+
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+.env.*
+
+# Archivos del sistema operativo
+.DS_Store
+
+# Archivos de editores
+.vscode/
