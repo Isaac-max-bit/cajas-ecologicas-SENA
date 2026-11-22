@@ -36,7 +36,7 @@ Material total = A + Reserva
 
 1. Clonar el repositorio:
 
-   git clone https://github.com/Isaac-max-bit/calculadora-caja-ecologica.git
+   git clone [https://github.com/Isaac-max-bit/calculadora-caja-ecologica.git](https://github.com/Isaac-max-bit/cajas-ecologicas-SENA.git)
 
 2. Entrar en la carpeta:
 
